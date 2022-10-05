@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://browyn-rating.netlify.app)
-- Live Site URL: [Add live site URL here](https://browyn-rating.netlify.app)
+- Live Site URL: [(https://browyn-rating.netlify.app)](https://browyn-rating.netlify.app)
 
 ## My process
 
