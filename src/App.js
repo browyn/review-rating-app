@@ -1,11 +1,18 @@
 import React from "react";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import icon from "./assets/images/icon-star.svg";
 import iconThankYou from "./assets/images/illustration-thank-you.svg";
 import "./App.scss";
 
 function App() {
-
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  }, [])
   const [select, setSelect] = React.useState(0);
   const [submitMessage, setSubmitMessage] = React.useState(false);
   const ratings = [1, 2, 3, 4, 5];
@@ -43,7 +50,7 @@ function App() {
                   </div>
                 </>
                 :
-                <div className="card-appreciation">
+                <div className="card-appreciation" data-aos="fade-in">
                   <img src={iconThankYou} alt="Thank you illustration" />
                   <h1>Thank You!</h1>
                   <span>You selected {select} out of 5</span>
