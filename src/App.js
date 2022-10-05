@@ -14,16 +14,6 @@ function App() {
     return select === 0 ? alert('Please select a number') : setSubmitMessage(!false);
   };
 
-  const appreciation = (
-    <div className="card-appreciation">
-      <img src={iconThankYou} alt="Thank you illustration" />
-      <h1>Thank You!</h1>
-      <span>You selected {select} out of 5</span>
-      <p>We appreciate you taking the time to give a rating.
-        If you ever need support, don't hesitate to get in touch!</p>
-    </div>
-  );
-
   return (
     <>
       <div className="card-container">
@@ -53,7 +43,13 @@ function App() {
                   </div>
                 </>
                 :
-                { appreciation }
+                <div className="card-appreciation">
+                  <img src={iconThankYou} alt="Thank you illustration" />
+                  <h1>Thank You!</h1>
+                  <span>You selected {select} out of 5</span>
+                  <p>We appreciate you taking the time to give a rating.
+                    If you ever need support, don't hesitate to get in touch!</p>
+                </div>
             }
             {!submitMessage && <button type="button" onClick={submit}>SUBMIT</button>}
           </div>
