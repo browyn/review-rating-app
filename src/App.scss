@@ -1,0 +1,106 @@
+@import "./sass/variables";
+@import "./sass/mixins";
+
+.card-container {
+    width: 350px;
+    max-width: 350px;
+    height: 360px;
+    max-height: 360px;
+    padding: 24px;
+    border-radius: 25px;
+    background: hsl(213, 19%, 15%);
+    ;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .card-logo {
+            img {
+                padding: 15px;
+                border-radius: 50%;
+                background: $darkBlue;
+            }
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            p {
+                color: $mediumGrey;
+                line-height: 23px;
+            }
+
+            .ratings {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $mediumGrey;
+                    background: $darkBlue;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $orange;
+                        color: $white;
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+            }
+
+            span.selected {
+                background: $mediumGrey;
+                color: $white;
+            }
+
+            button {
+                padding: 10px;
+                border-radius: 25px;
+                color: $white;
+                background: $orange;
+                cursor: pointer;
+                transition: all ease-in-out 0.3s;
+
+                &:hover {
+                    background: $white;
+                    color: $orange;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+
+            .card-appreciation {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+
+                img {
+                    width: 65%;
+                    margin: auto;
+                }
+
+                span {
+                    font-size: 13px;
+                    padding: 5px;
+                    width: 60%;
+                    margin: auto;
+                    margin-bottom: 5px;
+
+                    border-radius: 25px;
+                    color: $orange;
+                    background: $darkBlue;
+                }
+            }
+        }
+    }
+}
