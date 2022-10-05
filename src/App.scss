@@ -9,7 +9,12 @@
     padding: 32px;
     border-radius: 25px;
     background: hsl(213, 19%, 15%);
-    ;
+
+    @media only screen and (max-width: 575px) {
+        width: 330px;
+        height: 380px;
+        padding: 16px;
+    }
 
     .card-body {
         display: flex;
@@ -52,6 +57,12 @@
                     background: $darkBlue;
                     border-radius: 50%;
                     cursor: pointer;
+
+                    @media only screen and (max-width: 575px) {
+                        width: 40px;
+                        height: 40px;
+
+                    }
 
                     &:hover {
                         background: $orange;

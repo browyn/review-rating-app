@@ -52,8 +52,8 @@ function App() {
                 :
                 <div className="card-appreciation" data-aos="fade-in">
                   <img src={iconThankYou} alt="Thank you illustration" />
-                  <h1>Thank You!</h1>
                   <span>You selected {select} out of 5</span>
+                  <h1>Thank You!</h1>
                   <p>We appreciate you taking the time to give a rating.
                     If you ever need support, don't hesitate to get in touch!</p>
                 </div>
