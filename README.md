@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://browyn-rating.netlify.app)
-- Live Site URL: [Add live site URL here](https://browyn-rating.netlify.app)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/reviewrating-app-built-using-reactjs-IZM5Hv1HnG)
+- Live Site URL: [https://browyn-rating.netlify.app](https://browyn-rating.netlify.app)
 
 ## My process
 
@@ -48,5 +48,5 @@ Users should be able to:
 ## Author
 
 - Website - [Browyn Louis](https://browyn.netlify.app)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/browyn)
+- Frontend Mentor - [@browyn](https://www.frontendmentor.io/profile/browyn)
 - Twitter - [@browyn_louis](https://www.twitter.com/browyn_louis)
