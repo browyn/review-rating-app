@@ -29,9 +29,12 @@
             flex-direction: column;
             gap: 24px;
 
+            h1 {
+                font-size: 25px;
+            }
+
             p {
                 color: $mediumGrey;
-                line-height: 23px;
             }
 
             .ratings {
@@ -83,11 +86,11 @@
             .card-appreciation {
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
+                gap: 24px;
                 text-align: center;
 
                 img {
-                    width: 65%;
+                    width: 70%;
                     margin: auto;
                 }
 
@@ -97,7 +100,6 @@
                     width: 60%;
                     margin: auto;
                     margin-bottom: 5px;
-
                     border-radius: 25px;
                     color: $orange;
                     background: $darkBlue;

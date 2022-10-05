@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <>
+    <main>
       <div className="card-container">
         <div className="card-body">
           {
@@ -31,7 +31,7 @@ function App() {
                 ?
                 <>
                   <h1>How did we do?</h1>
-                  <p>Please let us know how we didi with your support request. All feedback is appreciated to help us improve our offering!</p>
+                  <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
                   <div className="ratings">
                     {ratings.map((rating) => (
                       <span key={`option-${rating}`} onClick={(e) => {
@@ -55,7 +55,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 
