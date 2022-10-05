@@ -48,6 +48,7 @@ function App() {
                       }} className={select === rating ? "selected" : null}>{rating}</span>
                     ))}
                   </div>
+                  <button type="button" onClick={submit}>SUBMIT</button>
                 </>
                 :
                 <div className="card-appreciation" data-aos="fade-in">
@@ -58,7 +59,6 @@ function App() {
                     If you ever need support, don't hesitate to get in touch!</p>
                 </div>
             }
-            {!submitMessage && <button type="button" onClick={submit}>SUBMIT</button>}
           </div>
         </div>
       </div>
