@@ -4,8 +4,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import icon from "./assets/images/icon-star.svg";
-import iconThankYou from "./assets/images/illustration-thank-you.svg";
 import "./App.scss";
+import Appreciation from "./components/Appreciation";
+import RatingForm from "./components/RatingForm";
 
 function App() {
   React.useEffect(() => {
@@ -13,13 +14,9 @@ function App() {
       duration: 1500,
     });
   }, [])
+
   const [select, setSelect] = React.useState(0);
   const [submitMessage, setSubmitMessage] = React.useState(false);
-  const ratings = [1, 2, 3, 4, 5];
-  const submit = (e) => {
-    e.preventDefault(0);
-    return select === 0 ? alert('Please select a number') : setSubmitMessage(!false);
-  };
 
   return (
     <main>
@@ -36,28 +33,9 @@ function App() {
             {
               !submitMessage
                 ?
-                <>
-                  <h1>How did we do?</h1>
-                  <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-                  <div className="ratings">
-                    {ratings.map((rating) => (
-                      <span key={`option-${rating}`} onClick={(e) => {
-                        e.preventDefault();
-                        setSelect(rating);
-                        console.log(rating);
-                      }} className={select === rating ? "selected" : null}>{rating}</span>
-                    ))}
-                  </div>
-                  <button type="button" onClick={submit}>SUBMIT</button>
-                </>
+                <RatingForm select={select} setSelect={setSelect} setSubmitMessage={setSubmitMessage} />
                 :
-                <div className="card-appreciation" data-aos="fade-in">
-                  <img src={iconThankYou} alt="Thank you illustration" />
-                  <span>You selected {select} out of 5</span>
-                  <h1>Thank You!</h1>
-                  <p>We appreciate you taking the time to give a rating.
-                    If you ever need support, don't hesitate to get in touch!</p>
-                </div>
+                <Appreciation select={select} />
             }
           </div>
         </div>
