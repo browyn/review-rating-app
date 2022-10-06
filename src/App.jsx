@@ -8,7 +8,7 @@ import "./App.scss";
 import Appreciation from "./components/Appreciation";
 import RatingForm from "./components/RatingForm";
 
-function App() {
+const App = () => {
   React.useEffect(() => {
     AOS.init({
       duration: 1500,
